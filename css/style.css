@@ -60,6 +60,27 @@ p {
     border: none;
 }
 
+.section {
+    width: 50%;
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.aCenter {
+    display: inline-block;
+}
+
+.aLeft {
+    text-align: left;
+}
+
+/* Navigation Section*/
 #navigation {
     width: 100%;
     height: 50px;
@@ -109,26 +130,7 @@ ul#horizontal-list li a:hover {
     text-decoration: underline;
 }
 
-.section {
-    width: 50%;
-    height: 75vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0 50px;
-    text-align: center;
-}
-
-.aCenter {
-    display: inline-block;
-}
-
-.aLeft {
-    text-align: left;
-}
-
+/* Welcome Section*/
 #landing {
     height: 100vh;
     display: flex;
@@ -164,6 +166,7 @@ ul#horizontal-list li a:hover {
     margin: 0 0 100px 0;
 }
 
+/* Introduction Section*/
 #introduction {
     height: auto;
 }
@@ -176,6 +179,7 @@ ul#horizontal-list li a:hover {
     margin: 0 0 50px 0;
 }
 
+/* Statistics Section*/
 #stats {
     width: 100%;
     height: auto;
@@ -200,8 +204,94 @@ ul#horizontal-list li a:hover {
     color: #FFFFFF;
 }
 
+/* Schedule Section*/
 #scheduleSection {
     height: auto;
+}
+
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    background-color: rgba(0,0,0,0.75); /* Black background with opacity */
+}
+
+.overlayContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    color: #000000;
+}
+
+.overlayTable tr {
+    font-size: 14pt;
+}
+
+.overlayTable tr:first-child {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.overlayTable tr td {
+    padding: 25px;
+}
+
+.overlayButtons {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.overlayButtons h4 {
+    font-family: LifeEF;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.overlayButtons:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#overlay1CloseB {
+    width: 75px;
+    padding: 0;
+}
+
+#overlay1CloseB:hover {
+    cursor: pointer; /* Add a pointer on hover */
+    background-color: rgba(75, 75, 75, 0.4);
+}
+
+#overlay2CloseB {
+    width: 75px;
+    padding: 0;
+}
+
+#overlay2CloseB:hover {
+    cursor: pointer; /* Add a pointer on hover */
+    background-color: rgba(75, 75, 75, 0.4);
+}
+
+#overlay3CloseB {
+    width: 75px;
+    padding: 0;
+}
+
+#overlay3CloseB:hover {
+    cursor: pointer; /* Add a pointer on hover */
+    background-color: rgba(75, 75, 75, 0.4);
 }
 
 .collapsible {
@@ -232,18 +322,31 @@ td h4 {
     margin: 0;
 }
 
+.setup {
+    background-color: rgba(75, 75, 75, 0.4);
+}
+
 .closed {
-    background-color: rgba(230, 25, 25, 0.5);
+    background-color: rgba(255, 25, 25, 0.4);
 }
 
 .opened {
-    background-color: rgba(95, 230, 25, 0.5);
+    background-color: rgba(95, 230, 25, 0.4);
+}
+
+.critReview {
+    background-color: rgba(25, 25, 255, 0.4);
 }
 
 .event {
-    background-color: rgba(255, 125, 0, 0.5);
+    background-color: rgba(255, 125, 0, 0.4);
 }
 
+.overlap {
+    background-color: rgba(125, 25, 125, 0.4);
+}
+
+/* Directions Section*/
 #lastSection {
     padding-bottom: 50px;
 }
@@ -252,6 +355,7 @@ td h4 {
     margin-bottom: 0;
 }
 
+/* Footer Section*/
 footer {
     width: 100%;
     height: 50px;
