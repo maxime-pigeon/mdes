@@ -34,10 +34,6 @@ p {
     margin-top: 0;
 }
 
-#backgroundColor {
-    background-color: rgba(255, 255, 255, 0.90)
-}
-
 .stretch {
     width: 100%;
 }
@@ -70,6 +66,7 @@ p {
     margin: 0 auto;
     padding: 0 50px;
     text-align: center;
+    background-color: #FFFFFF;
 }
 
 .aCenter {
@@ -134,18 +131,22 @@ ul#horizontal-list li a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
 }
 
 #subLanding {
-    position: relative;
+    padding: 25px 50px;
+    background-color: #FFFFFF;
 }
 
 #subLandingBottom {
     position: absolute;
     margin: 0;
+    padding: 0 15px;
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: 0;
+    background-color: #FFFFFF;
 }
 
 #subLandingBottom h4 {
@@ -154,12 +155,13 @@ ul#horizontal-list li a:hover {
 
 #title {
     display: block;
-    font-size: 110pt;
+    font-size: 104pt;
     margin: 0;
 }
 
 #subTitle {
     font-size: 40pt;
+    font-weight: lighter;
     margin: 0 0 100px 0;
 }
 
