@@ -153,6 +153,10 @@ ul#horizontal-list li a:hover {
     margin-bottom: 5px;
 }
 
+#titleLogo {
+    width: 90%;
+}
+
 #title {
     display: block;
     font-size: 104pt;
